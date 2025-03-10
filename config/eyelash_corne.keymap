@@ -61,31 +61,27 @@
                                    &mt LGUI LANG2  &lt 1 SPACE  &lt 3 BACKSPACE                                             &lt 3 BACKSPACE  &lt 1 ENTER  &mt RALT LANG1
             >;
 
-            sensor-bindings = <&inc_dec_kp F13 F14>;
+            sensor-bindings = <&inc_dec_kp F14 F13>;
         };
 
         symbol {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL  &kp AT     &kp HASH   &kp DLLR           &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET  &kp AMPS       &kp ASTRK         &kp PIPE           &kp BACKSLASH  &trans
-&trans  &none     &mkp LCLK  &kp TILDE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER      &trans
-&trans  &none     &mkp MCLK  &mkp RCLK  &kp EQUAL          &kp PLUS          &trans                    &mmv MOVE_DOWN                   &kp LPAR   &kp RPAR       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp QUESTION   &trans
-                             &trans     &trans             &kp F20                                                                      &kp F20    &kp LG(ENTER)  &trans
+&trans  &kp EXCL    &kp AT     &kp HASH   &kp DLLR           &kp PRCNT                                   &mmv MOVE_UP                     &kp CARET  &kp AMPS       &kp ASTRK         &kp PIPE           &kp BACKSLASH  &trans
+&trans  &kp LCTRL   &mkp LCLK  &kp TILDE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp UNDER      &trans
+&trans  &kp LSHIFT  &mkp MCLK  &mkp RCLK  &kp EQUAL          &kp PLUS          &trans                    &mmv MOVE_DOWN                   &kp LPAR   &kp RPAR       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp QUESTION   &trans
+                               &trans     &trans             &kp F20                                                                      &kp F20    &kp LG(ENTER)  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp F13 F14>;
         };
 
         number {
             display-name = "NUMBER";
             bindings = <
 &studio_unlock  &kp N1  &kp N2          &kp N3          &kp N4           &kp N5                                &mmv MOVE_UP                     &kp N6     &kp N7  &kp N8   &kp N9  &kp N0     &trans
-&trans          &none   &none           &msc SCRL_UP    &kp COLON        &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp SLASH  &kp N4  &kp N5   &kp N6  &kp MINUS  &trans
-&trans          &none   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp ASTRK  &kp N1  &kp N2   &kp N3  &kp PLUS   &trans
+&trans          &trans  &none           &msc SCRL_UP    &kp COLON        &none                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp SLASH  &kp N4  &kp N5   &kp N6  &kp MINUS  &trans
+&trans          &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp ASTRK  &kp N1  &kp N2   &kp N3  &kp PLUS   &trans
                                         &trans          &trans           &trans                                                                 &kp COMMA  &kp N0  &kp DOT
             >;
-
-            sensor-bindings = <&inc_dec_kp F13 F14>;
         };
 
         arrow {
@@ -107,8 +103,6 @@
 &trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                                  &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &kp LC(ESCAPE)
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
