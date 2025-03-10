@@ -28,7 +28,7 @@ layers:
   - L
   - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - $$mdi:keyboard-tab$$
-  - $$mdi:apple-keyboard-shift$$
+  - NUMBER
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -126,7 +126,7 @@ layers:
   - {t: '6', s: ^}
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
